@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>ROAD TAX SERVICES</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jQuery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+    <!-- Font Awesome Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    header {
+        height: 90px;
+        background: wheat;
+    }
+
+    .inner-width {
+        max-width: 1000px;
+        padding: 0 10px;
+        margin: auto;
+    }
+
+    .logo {
+        float: left;
+        padding: 30px 0;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .navigation-menu {
+        float: right;
+        display: flex;
+        align-items: center;
+        min-height: 90px;
+    }
+
+    .navigation-menu a {
+        margin-left: 10px;
+        color: black;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 10px 10px;
+        border-radius: 4px;
+        transition: .3s linear;
+    }
+
+    .navigation-menu a:hover {
+        background: whitesmoke;
+        color: RED;
+        transform: scale(1.1);
+    }
+
+    .navigation-menu i {
+        margin-right: 8px;
+        font-size: 16px;
+    }
+
+    .home {
+        color: #ff6b6b;
+    }
+
+    .about {
+        color: #0abde3;
+    }
+
+    .works {
+        color: #feca57;
+    }
+
+    .team {
+        color: #5f27cd;
+    }
+
+    .contact {
+        color: #1dd1a1;
+    }
+
+    .menu-toggle-btn {
+        float: right;
+        height: 90px;
+        line-height: 90px !important;
+        color: RED;
+        font-size: 26px;
+        display: none !important;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width:700px) {
+        .menu-toggle-btn {
+            display: block !important;
+        }
+
+        .navigation-menu {
+            position: fixed;
+            width: 100%;
+            max-width: 400px;
+            background: whitesmoke;
+            top: 90px;
+            right: 0;
+            display: none;
+            padding: 20px 40px;
+            box-sizing: border-box;
+        }
+
+        .navigation-menu::before {
+            content: "";
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid red;
+            position: absolute;
+            top: -10px;
+            right: 10px;
+        }
+
+        .navigation-menu a {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .navigation-menu.active {
+            display: block;
+        }
+    }
+</style>
+
+<STYLE>
+    h2 {
+        text-align: center;
+    }
+</STYLE>
+<style>
+    body {
+        font-family: Verdana, sans-serif;
+        margin: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .row>.column {
+        padding: 10px 4px;
+    }
+
+
+    .column {
+        float: left;
+        width: 25%;
+    }
+
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+    img {
+        margin-bottom: -4px;
+    }
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+    img.hover-shadow {
+        transition: 0.4s;
+    }
+
+    .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+</style>
+<style>
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+</style>
+<style>
+    .footer {
+        background-color: brown;
+        padding: 50px;
+    }
+</style>
+
+<body>
+
+    <header>
+        <div class="inner-width">
+            <a href="" class="logo"><img src="road_PNG48.png"></a>
+            <i class="menu-toggle-btn fas fa-bars"></i>
+            <nav class="navigation-menu">
+                <a href=""> Home</a>
+                <a href=""> COMPLAINT</a>
+                <a href=""> CONTACTUS</a>
+                <a href=""> SERVICES</a>
+                <a href=""> ROADTAX</a>
+                <a href=""> BLOG</a>
+                <a href=""> FORUM</a>
+                <a href=""> ABOUT</a>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <div class="container-fluid">
+        <h2>STATES WE CONNECT TOGETHER</h2>
+        <br>
+        <div class="row">
+            <div class="column">
+                <img src="Charminar-Hyderabad-1905.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
+                    class="img-fluid">
+            </div>
+            <div class="column">
+                <img src="25chennai1.jpg" style="width:96%" onclick="openModal();currentSlide(2)" class="img-fluid">
+            </div>
+            <div class="column">
+                <img src="Red-Fort-Old-Delhi.jpg" style="width:86%" onclick="openModal();currentSlide(3)"
+                    class="img-fluid">
+            </div>
+            <div class="column">
+                <img src="the_bangalore_palace.jpg" style="width:90%">
+            </div>
+        </div>
+        <a href="#" class="next">See More... &raquo;</a>
+        <br>
+        <br>
+        <br>
+        <h3>Procedure for Noc of vehicle</h3>
+        <p>Process , documents required varies significantly from city to city . To
+            know the exact detail</p>
+        <br>
+
+        <div class="footer">
+            <img src="road_PNG48.png" style="width: 100px">
+            <p style="color: cornsilk;">Home</p>
+            <br>
+            <p style="color: cornsilk;">Services</p>
+            <br>
+            <p style="color: cornsilk;">Blogs</p>
+            <br>
+            <p style="color: cornsilk;">Forum<br>
+                <a href="mailto:@example.com">@example.com</a>
+            </p>
+        </div>
+        <!-- Our Custom JS -->
+        <script>// ON BUTTON CLICK 
+            $(".menu-toggle-btn").click(function () {
+                $(this).toggleClass("fa-times");
+                $(".navigation-menu").toggleClass("active");
+            });</script>
+
+</body>
+
+</html>
